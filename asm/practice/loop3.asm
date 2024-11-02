@@ -1,0 +1,20 @@
+.MODEL SMALL
+.STACK 100H
+.DATA
+.CODE
+MAIN PROC
+MOV ax,0
+MOV cx,100
+
+START:
+ADD ax,cx
+SUB cx,5
+CMP cx,5
+JGE START
+
+
+
+
+
+    MAIN ENDP
+END MAIN
